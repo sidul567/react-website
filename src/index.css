@@ -1,13 +1,83 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+body{
+    overflow-x : hidden;
+}
+.navbar{
+    background-color: #fff !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar-brand{
+    color: #565387 !important;
+    font-size: 1.9rem !important;
+}
+
+.menu_active{
+    border-bottom: 1px solid #565387;
+    font-weight: bold;
+}
+
+.navbar a{
+    font-size: 1.3rem !important;
+    text-transform: Capitalized;
+}
+.navbar a:hover{
+    color: #3498db !important;
+}
+
+#header{
+    width:100%;
+    height:80vh;
+    margin-top: 70px;
+}
+#header h1{
+    margin : 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: #000;
+}
+#header .brand-name{
+    color: #3498db;
+}
+#header h2{
+    font-size: 24px;
+    color: #484848;
+}
+#header .btn-get-started{
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing:1px;
+    display:inline-block;
+    padding : 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #3498db;
+    border: 2px solid #3498db;
+    text-decoration: none;
+}
+#header .btn-get-started:hover{
+    background : #3498db;
+    color: #fff;
+}
+#header img{
+    text-align: right;
+    animation: up_down 2s infinite alternate-reverse ease-in-out both;
+}
+@keyframes up_down{
+    0%{
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(-15px);
+    }
+}
+#btnWarning{
+    background-color: #FFCA2C;
+    border : 0;
 }
